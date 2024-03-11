@@ -1,21 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator BMI - Fariz</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
+    <link rel="stylesheet" href="css/style.css" />
+    <body>
+      <header></header>
+      <main>
+        <!-- Main -->
+        <div class="full-container">
+          <h2 id="judul">Kalkulator BMI</h2>
+          <div class="main-container">
+            <div>
+              <p>
+                Berat badan ideal adalah impian semua orang. Tidak hanya
+                memiliki bentuk tubuh yang menunjang penampilan, berat badan
+                ideal juga menandakan kondisi tubuh yang sehat. Bagaimana
+                denganmu? Yuk, hitung sekarang di kalkulator BMI.
+              </p>
+              <!-- Form -->
+              <form>
+                <div class="form-group">
+                  <label class="container control-label">Jenis Kelamin</label>
+                  <div class="container inputGroup">
+                    <input name="sex" type="radio" value="pria" />
+                    <label class="sex" for="pria">Laki-laki</label>
+                    <input name="sex" type="radio" value="perempuan" />
+                    <label class="sex" for="perempuan">Perempuan</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="container control-label"
+                    >Berat badan (kg)</label
+                  >
+                  <div class="container inputGroup">
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="fa-solid fa-pencil"></i>
+                      </span>
+                      <input
+                        class="form-control"
+                        name="weight"
+                        type="number"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="container control-label">Umur (tahun)</label>
+                  <div class="container inputGroup">
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="fa-solid fa-pencil"></i>
+                      </span>
+                      <input
+                        class="form-control"
+                        name="weight"
+                        type="number"
+                        placeholder=" Minimal 18 Tahun"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="container control-label"
+                    >Tinggi Badan (cm)</label
+                  >
+                  <div class="container inputGroup">
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="fa-solid fa-pencil"></i>
+                      </span>
+                      <input
+                        class="form-control"
+                        name="height"
+                        type="number"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- Button -->
+                <div class="form-group">
+                  <label class="container control-label"></label>
+                  <span class="button">
+                    <button class="calculate">Hitung BMI</button>
+                    <button class="reset">Reset</button>
+                  </span>
+                </div>
+              </form>
+            </div>
+            <!-- Bagian Samping -->
+            <div class="aside">
+              <p class="sub-title">Keunggulan Fitur</p>
+              <div class="list">
+              <p>1. Menghitung berat badan</p>
+              <p>2. Menentukan kategori berat badan ideal atau tidak</p>
+              <p>3. Mempersiapkan program penurunan berat badan</p>
+            </div>
+            <br>
+              <p>
+                Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita
+                hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini)
+                dan tidak ada tindakan yang harus diambil berdasarkan nilainya
+                selain berkonsultasi dengan orang yang memenuhi syarat seperti
+                dokter.
+              </p>
+              <br>
+              <p>
+                Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M2.
+              </p>
+            </div>
+          </div>
+          <hr>
+          <div class="content-hasil">
+            <h3>Hasil</h3>
+            <div class="main-container">
 
-    </header>
-    <main>
 
-    </main>
-    <footer>
+            </div>
+            <div class="aside">
 
-    </footer>  
-    <script src="js/script.js"></script>  
-</body>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer>
+        <b>Kontak Kami</b>
+        <p>PT Tuminah Tbk</p>
+        <br />
+        <b>Kantor Pusat</b>
+        <p>Jl. Sumatra No.7, Gg.Pojok, Kota Bandung</p>
+        <b class="jawa">Jawa Barat</b>
+        <p><b>Telp.</b>(+62)89743215409</p>
+        <br />
+        <div>
+          <b>Ikuti Kami</b>
+          <ul class="sosmed">
+            <li class="sosmed-list">
+              <a class="instagram brand" href="https://www.instagram.com"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li class="sosmed-list">
+              <a class="facebook brand" href="https://www.facebook.com"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li class="sosmed-list">
+              <a class="twitter brand" href="https://twitter.com"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="download">
+        <a href="https://play.google.com/" target="_blank">
+          <img class="link-download" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="playstore" />
+        </a>
+        <a href="https://app.store.com/" target="_blank">
+          <img class="link-download" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="playstore" />
+        </a>
+      </div>
+      </footer>
+      <script src="js/script.js"></script>
+      <script
+        src="https://kit.fontawesome.com/5d55a3bea0.js"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </head>
 </html>
