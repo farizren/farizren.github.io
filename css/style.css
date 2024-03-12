@@ -1,6 +1,6 @@
 *,
 html {
-    font-family: sans-serif;
+    font-family: "Lato", sans-serif;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
@@ -13,13 +13,17 @@ html {
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 1080px;
-    height: 100vh;
+    max-width: 1080px;
 }
 
 .main-container {
     display: flex;
-    gap: 50px;
+    gap: 36px;
+    margin-top: 20px;
+}
+
+.input-container {
+    width: 100%;
 }
 
 h2 {
@@ -30,17 +34,18 @@ h2 {
 
 p {
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 400;
     text-align: justify;
     word-spacing: 5px;
     line-height: 1.6;
 }
 
-form {
+.window-input {
     margin-top: 15px;
     padding: 10px;
     background-color: #E6F2F8;
     border-radius: 10px;
+    width: 100%;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -168,6 +173,82 @@ form {
     -o-border-radius: 4px;
 }
 
+.btn {
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    background-color:rgb(0, 188, 230);
+    color: white;
+    cursor: pointer;
+    padding: 6px;
+    border: 1px solid rgb(0, 166, 222);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.btn:hover {
+    font-size: 14px;
+    background-color:rgb(0, 156, 191);
+    color: white;
+    cursor: pointer;
+    padding: 6px;
+    border: 1px solid #0086c4;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+#hasil {
+    display: none;
+}
+
+.hasil-label {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.kualitas {
+    font-size: 17px;
+    text-align: center;
+    word-spacing: 0;
+}
+
+.detail-result {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.label-result {
+    margin-bottom: 8px;
+}
+
+.result {
+    margin-bottom: 4px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.window-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
 .aside {
     width: 100%;
     font-weight: 100;
@@ -182,6 +263,10 @@ form {
     font-size: 18px;
 }
 
+.conditions {
+    display: none;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -189,6 +274,7 @@ footer {
     justify-content: center;
     background-color: rgb(79, 79, 79);
     color: white;
+    margin-top: 14px;
     padding: 14px;
     text-align: center;
 }
@@ -207,6 +293,7 @@ footer {
 .sosmed-list {
     list-style-type: none;
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .brand{
@@ -266,7 +353,7 @@ footer {
 }
 
 .download {
-    margin-top: 32px;
+    margin-top: 6px;
 }
 
 a > img {
@@ -277,4 +364,42 @@ hr {
     margin-top: 20px;
     margin-bottom: 20px;
     border: 1px solid #eee; 
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    .full-container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sex {
+        font-size: 14px;
+    }
+
+    .window-input,
+    .form-group {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .form-group {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 2px;
+    }
+
+    .aside,
+    .list {
+        font-size: 12px;
+    }
 }
